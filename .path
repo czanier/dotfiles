@@ -1,0 +1,16 @@
+# MacPorts
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# MySQL
+export PATH=$PATH:/usr/local/mysql/bin
+# User's binaries
+export PATH=$PATH:~/bin
+# Git path
+export PATH=/usr/local/git/bin:$PATH
+# Android NDK binaries
+export PATH=$ANDROID_NDK_ROOT:$ANDROID_SDK_ROOT:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_NDK_ROOT/toolchains/arm-linux-androideabi-4.4.3/prebuilt/darwin-x86/bin:$PATH
+# Android SDK tools
+export PATH=$ANDROID_SDK_ROOT/tools:$PATH
+# NPM Bin
+export PATH=~/.npm_prefix/bin:$PATH
+# Postgress 9.2 
+export PATH=/opt/local/lib/postgresql92/bin:$PATH

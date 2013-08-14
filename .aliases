@@ -139,3 +139,29 @@ command -v grunt > /dev/null && alias grunt="grunt --stack"
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
+
+# Global Python env activate
+alias pyenvact="source ~/.PYTHON/bin/activate"
+# Remove Python compiled files
+alias rm_pyc="find . -name '*.pyc' -print0|xargs -0 rm"
+# Start Django Server
+alias runsv="./manage.py runserver 0.0.0.0:8000"
+
+# Android addr2line
+alias addr2line="$ANDROID_NDK_ROOT/toolchains/arm-linux-androideabi-4.4.3/prebuilt/darwin-x86/bin/arm-linux-androideabi-addr2line"
+
+# Remove CMake Cache files
+alias rm_cmake_cache="rm -rf CMakeFiles CMakeCache.txt cmake_install.cmake Makefile"
+
+# MySQL 5 aliases
+alias mysqlstart='sudo /opt/local/bin/mysqld_safe5 &'
+alias mysqlstop='/opt/local/bin/mysqladmin5 -u root -p shutdown'
+alias mysql="mysql5"
+alias mysqldump="mysqldump5"
+
+# Ruby VM activate
+alias rvm_activate="source ~/.rvm/scripts/rvm"
+
+# Encrypt / Decrypt using openssl
+alias encrypt="openssl enc -aes-256-cbc -salt -in "
+alias decrypt="openssl enc -d -aes-256-cbc -in "

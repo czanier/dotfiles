@@ -23,3 +23,14 @@ export GREP_OPTIONS="--color=auto"
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+# Android sdk
+export ANDROID_NDK_ROOT=~/Development/sdk/android-ndk
+export ANDROID_SDK_ROOT=~/Development/sdk/android-sdk-macosx
+
+export ANDROID_NDK=$ANDROID_NDK_ROOT
+export ANDROID_SDK=$ANDROID_SDK_ROOT
+export NDK=$ANDROID_NDK_ROOT
+
+# 
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
