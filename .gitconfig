@@ -23,6 +23,18 @@
 	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
 	# Interactive rebase with the given number of latest commits
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
+    # Log as history
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    # Shortcut
+    co = checkout
+    # Shortcut
+    ci = commit
+    # Shortcut
+    st = status
+    # Shortcut
+    br = branch
+    type = cat-file -t
+    dump = cat-file -p
 
 [apply]
 	# Detect whitespace errors when applying a patch
@@ -34,7 +46,7 @@
 	attributesfile = ~/.gitattributes
 	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
 	whitespace = space-before-tab,indent-with-non-tab,trailing-space
-
+    filemode = false
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
 	ui = auto
@@ -71,3 +83,7 @@
 
 [push]
 	default = matching
+[user]
+    name = Cristian Zanier
+    email = cristian.zanier@gmail.com
+
